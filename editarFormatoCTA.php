@@ -24,30 +24,7 @@ function reSend(){
 <!--           -->
 <!-- NAVEGADOR -->
 <!--           -->
-<nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background:rgba(255,255,255,0.9);">
-<a class="navbar-brand" href="index.php">
-   <img src="./img/logo.png" class="d-inline-block align-top" width="40px" height="40px"  alt="inicio">Cazuca
-</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item pr-5">
-        <a class="btn btn-outline-danger" href="index.php">Inicio</a>
-      </li>
-      <li class="nav-item pr-5">
-        <a class="btn btn-outline-danger" href="informacion.php">Informaci&oacute;n</a>
-      </li>
-      <li class="nav-item pr-5">
-        <a class="btn btn-outline-danger" href="formatos.php">Formatos</a>
-      </li>
-      <li class="nav-item pr-5">
-        <a class="btn btn-outline-danger" href="finanzas.php">Finanzas</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<?php include("header.php");?>
 <!--           -->
 <!-- NAVEGADOR -->
 <!--           -->
@@ -145,10 +122,12 @@ if (@mysqli_query($conn,"UPDATE cuartocta SET Verde=$Verde,Azul=$Azul,Gris=$Gris
 </div><!-- CONTAINER -->
 
 
-<footer class="footer pt-3">
-  <div class="container">
-    <p>Copyright 2017 &copy; by UEB-IEEE-Computer</p>
-  </div>
-</footer>
+<!--          -->
+<!--  FOOTER  -->
+<!--          -->
+<?php include("footer.php");?>
+<!--          -->
+<!--  FOOTER  -->
+<!--          -->
 </body>
 </html>
