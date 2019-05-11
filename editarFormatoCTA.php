@@ -54,7 +54,7 @@ $bool = true;
 if(strpos($Fecha,"/") !== false){
 $fecha = DateTime::createFromFormat('m/d/Y', $Fecha);
 $Fecha  = $fecha->format('Y-m-d');
-$date = date('Y-m-d', strtotime("-1 day"));
+$date = date('Y-m-d', strtotime("+0 day"));
 if($date < $Fecha){
 $bool = false;
 }
@@ -81,21 +81,21 @@ if (@mysqli_query($conn,"UPDATE cuartocta SET Verde=$Verde,Azul=$Azul,Gris=$Gris
 <form action="editarFormatoCTA.php?id=<?php echo $id; ?>" method="POST">
   <div class="form-row">
     <div class="col">
-      <label class="text-success" for="ip1">Caneca verde</label>
+    <label class="text-success" data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca VERMICOMPOST van: Residuos orgánicos crudos, excepto los cítricos." for="ip1">Caneca verde</label>
       <input name="Verde" type="number" id="ip1" class="form-control" value="<?php echo $data[1]; ?>" min="0" required step="any">
     </div>
     <div class="col">
-      <label class="text-primary" for="ip2">Caneca azul</label>
+    <label class="text-primary" data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca PLÁSTICOS van: Botellas plásticas, Empaques metalizados, Empaques plásticos, Icopor, Tetrapack, Vidrio, Tela mojada  y seca" for="ip2">Caneca azul</label>
       <input name="Azul" type="number" id="ip2" class="form-control" value="<?php echo $data[2]; ?>" min="0" required step="any">
     </div>
   </div>
   <div class="form-row">
     <div class="col">
-      <label class="text-secondary" for="ip3">Caneca gris</label>
+    <label class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Recuerda que en la caneca PAPEL Y CARTÓN van: Papel y Cartón En buenas condiciones limpios y secos" for="ip3">Caneca gris</label>
       <input name="Gris" type="number" id="ip3" class="form-control" value="<?php echo $data[3]; ?>" min="0" required step="any">
     </div>
     <div class="col">
-      <label for="ip4">Caneca negra</label>
+    <label for="ip4" data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca NO APROVECHABLES van: Papel higiénico Polvo del barrido Servilletas o papel sucio de algún químico (en mal estado)">Caneca negra</label>
       <input name="Negra" type="number" id="ip4" class="form-control" value="<?php echo $data[4]; ?>" min="0" required step="any">
     </div>
   </div>

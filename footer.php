@@ -12,3 +12,4 @@
 		<p>Copyright 2017 &copy; by UEB-IEEE-Computer</p>
 	</div>
 </footer>
+<?php include("configBody.php")?>

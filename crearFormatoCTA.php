@@ -46,7 +46,7 @@ $Fecha = $_POST['Fecha'];
 $fecha = DateTime::createFromFormat('m/d/Y', $Fecha);
 $Fecha  = $fecha->format('Y-m-d');
 $bool = true;
-$date = date('Y-m-d', strtotime("-1 day"));
+$date = date('Y-m-d', strtotime("+0 day"));
 if($date < $Fecha){
 $bool = false;
 }
@@ -74,21 +74,21 @@ if (@mysqli_query($conn,"INSERT INTO cuartocta VALUES ('',$Verde,$Azul,$Gris,$Ne
 <form action="crearFormatoCTA.php" method="POST">
   <div class="form-row">
     <div class="col">
-      <label class="text-success" for="ip1">Caneca verde</label>
+      <label class="text-success" data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca VERMICOMPOST van: Residuos orgánicos crudos, excepto los cítricos." for="ip1">Caneca verde</label>
       <input name="Verde" type="number" id="ip1" class="form-control" placeholder="Peso (Kg)" min="0" max="10000"  required step="any">
     </div>
     <div class="col">
-      <label class="text-primary" for="ip2">Caneca azul</label>
+      <label class="text-primary" data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca PLÁSTICOS van: Botellas plásticas, Empaques metalizados, Empaques plásticos, Icopor, Tetrapack, Vidrio, Tela mojada  y seca" for="ip2">Caneca azul</label>
       <input name="Azul" type="number" id="ip2" class="form-control" placeholder="Peso (Kg)" min="0" max="10000"  required step="any">
     </div>
   </div>
   <div class="form-row">
     <div class="col">
-      <label class="text-secondary" for="ip3">Caneca gris</label>
+      <label class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Recuerda que en la caneca PAPEL Y CARTÓN van: Papel y Cartón En buenas condiciones limpios y secos" for="ip3">Caneca gris</label>
       <input name="Gris" type="number" id="ip3" class="form-control" placeholder="Peso (Kg)" min="0" max="10000"  required step="any">
     </div>
     <div class="col">
-      <label for="ip4">Caneca negra</label>
+      <label for="ip4" data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca NO APROVECHABLES van: Papel higiénico Polvo del barrido Servilletas o papel sucio de algún químico (en mal estado)">Caneca negra</label>
       <input name="Negra" type="number" id="ip4" class="form-control" placeholder="Peso (Kg)" min="0" max="10000"  required step="any">
     </div>
   </div>

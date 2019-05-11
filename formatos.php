@@ -42,12 +42,12 @@ include("configHead.php");
 <table class="table table-bordered table-responsive">
   <thead>
        <tr>
-        <th>ID</th>
-        <th>Caneca Verde(Kg)</th>
-        <th>Caneca Azul(Kg)</th>
-        <th>Caneca Gris(Kg)</th>
-        <th>Caneca Negra(Kg)</th>
-        <th>Fecha De registro</th>
+
+        <th class="text-success" data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca VERMICOMPOST van: Residuos orgánicos crudos, excepto los cítricos."><label>Caneca Verde(Kg)</label></th>
+        <th class="text-primary" data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca PLÁSTICOS van: Botellas plásticas, Empaques metalizados, Empaques plásticos, Icopor, Tetrapack, Vidrio, Tela mojada  y seca"><label>Caneca Azul(Kg)</label></th>
+        <th class="text-muted" data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca PAPEL Y CARTÓN van: Papel y Cartón En buenas condiciones limpios y secos"><label>Caneca Gris(Kg)</label></th>
+        <th data-toggle="tooltip" data-placement="top" title="Recuerda que en la caneca NO APROVECHABLES van: Papel higiénico Polvo del barrido Servilletas o papel sucio de algún químico (en mal estado)"><label>Caneca Negra(Kg)</label></th>
+        <th><label>Fecha De registro</label></th>
       </tr>
     </thead>
     <tbody>
@@ -57,7 +57,7 @@ include("configHead.php");
         $cont = 0;
         while($row3 = mysqli_fetch_array($resultado) and $cont <3){ ?>
         <tr>
-         <td> <?php  echo $row3['ID_CuartoCTA']; ?></td>
+
          <td> <?php  echo $row3['Verde']; ?></td>
          <td> <?php  echo $row3['Azul']; ?></td>
          <td> <?php  echo $row3['Gris']; ?></td>
@@ -142,7 +142,6 @@ include("configHead.php");
 <!--          -->
 <!--  FOOTER  -->
 <!--          -->
-
 
 </body>
 </html>
