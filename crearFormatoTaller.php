@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Diligenciar formato Taller de producci&oacute;n</title>
 <?php
 include("configHead.php");
 ?>

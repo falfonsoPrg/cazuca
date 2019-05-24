@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Crear producto</title>
 <?php
 include("configHead.php");
 ?>
@@ -55,14 +55,14 @@ move_uploaded_file( $_FILES['imagen']['tmp_name'], "./productos/$image");?>
 
 <form action="crearProducto.php" method="POST" enctype="multipart/form-data">
   <div class="form-group">
-    <label for="nom_producto">Nombre</label>
+    <label for="nom_producto">Nombre del producto</label>
     <input type="text" class="form-control" id="nom_producto" name="nom_producto">
   </div>
    <div class="form-group">
-    <label for="imagen">Example file input</label>
+    <label for="imagen">Examinar imagen del producto</label>
     <input type="file" class="form-control-file" id="imagen" name="imagen">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Subir</button>
 </form>
 
 <!-- CONTENEDOR -->

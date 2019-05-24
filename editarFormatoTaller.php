@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Editar formato Taller</title>
 <?php
 include("configHead.php");
 ?>

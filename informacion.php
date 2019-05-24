@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Informaci&oacute;n</title>
 <?php
 include("configHead.php");
 ?>
@@ -31,7 +31,7 @@ include("configHead.php");
     <div class="card" style="width: max;">
     <img src="" class="card-img-top">
         <div class="card-body">
-            <h5 class="card-title text-center"><b>COLEGIO DIOS ES AMOR ALTOS DE CAZUCA</b></h5>
+            <h5 class="card-title text-center"><b>COLEGIO DIOS ES AMOR ALTOS DE CAZUC&Aacute;</b></h5>
             <p class="card-text">El Colegio Dios Es Amor Altos De Cazuca se encuentra ubicado en el municipio de Soacha, fue fundado en 1992 como un esfuerzo filantrópico y voluntario, en respuesta al escaso acceso a servicios educativos en la zona. Inició labores, con la apertura de los primeros grados de educación primaria y un promedio de 100 alumnos. En el año 2000 entregó a la comunidad la primera promoción de bachilleres, resultado de un modelo educativo integral, logrando en el 2006 la acreditación de su sistema de gestión de la calidad. Actualmente mas de 850 alumnos conforman el colegio y cerca de 550 jóvenes han culminado con éxito su ciclo de formación básica y media vocacional.</p>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Gr&aacute;fica en rango CTA</title>
 <?php
 include("configHead.php");
 ?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Gr&aacute;fica mensual Taller</title>
 <?php
 include("configHead.php");
 ?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Productos</title>
 <?php
 include("configHead.php");
 ?>

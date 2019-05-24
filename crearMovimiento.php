@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Agregar movimiento</title>
 <?php
 include("configHead.php");
 ?>
