@@ -61,13 +61,11 @@ $desc_movimiento = "DEFAULT";
 }else{
 $desc_movimiento = "'".$_POST["desc_movimiento"]."'";
 }
-
-$val_producto = mysqli_query($conn, 'SELECT val_producto FROM producto WHERE cod_producto ='.$cod_producto);
-$row_val_producto = mysqli_fetch_array($val_producto);
-$val_movimiento = $row_val_producto[0] * $cant_movimiento;
+$val_producto = $_POST["val_producto"];
+$val_movimiento = $val_producto * $cant_movimiento;
 }
 
-if (@mysqli_query($conn,"INSERT INTO movimiento VALUES('',$cod_operacion,$cod_producto,$cant_movimiento,$desc_movimiento,$Fecha,$val_movimiento)")) { ?>
+if (@mysqli_query($conn,"INSERT INTO movimiento VALUES('',$cod_operacion,$cod_producto,$cant_movimiento,$val_movimiento,$desc_movimiento,$Fecha,$val_movimiento)")) { ?>
 <div class="alert alert-success" role="alert">
   Registro agregado con exito, espere unos segundos...
 </div>
@@ -106,7 +104,7 @@ if (@mysqli_query($conn,"INSERT INTO movimiento VALUES('',$cod_operacion,$cod_pr
       include_once("conexion.php");
       $resultado =  mysqli_query($conn, 'SELECT * FROM producto');
       while($row = mysqli_fetch_array($resultado)){
-        echo "<option value=$row[0]>$row[1] -> $row[2] C/U</option>";
+        echo "<option value=$row[0]>$row[1]</option>";
       }
       ?>
     </select>
@@ -115,6 +113,11 @@ if (@mysqli_query($conn,"INSERT INTO movimiento VALUES('',$cod_operacion,$cod_pr
   <div class="form-group">
      <label for="cant_movimiento">Cantidad</label>
      <input name="cant_movimiento" type="number" class="form-control" id="cant_movimiento" min="1" max="10000"  step="any" required>
+  </div>
+
+  <div class="form-group">
+    <label for="val_producto">Valor por unidad</label>
+    <input type="numer" class="form-control" id="val_producto" name="val_producto">
   </div>
 
   <div class="form-group">

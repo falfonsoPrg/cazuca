@@ -58,10 +58,6 @@ move_uploaded_file( $_FILES['imagen']['tmp_name'], "./productos/$image");?>
     <label for="nom_producto">Nombre</label>
     <input type="text" class="form-control" id="nom_producto" name="nom_producto">
   </div>
-  <div class="form-group">
-    <label for="val_producto">Valor por unidad</label>
-    <input type="numer" class="form-control" id="val_producto" name="val_producto">
-  </div>
    <div class="form-group">
     <label for="imagen">Example file input</label>
     <input type="file" class="form-control-file" id="imagen" name="imagen">

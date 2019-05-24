@@ -30,6 +30,8 @@ include("configHead.php");
 <?php
 include('conexion.php');
 $tc = mysqli_query($conn,"SELECT SUM(val_movimiento) FROM movimiento GROUP BY cod_operacion ");
+$num1=0;
+$num2=0;
 $c = 0;
 while($dc = mysqli_fetch_array($tc)){
   if($c==0){

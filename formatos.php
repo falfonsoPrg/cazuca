@@ -28,6 +28,18 @@ include("configHead.php");
   <div class="row pt-3">
     <div class="col-md">
 
+<div class="dropdown">
+  <a class="btn btn-outline-danger dropdown-toggle mb-3" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Descargar formatos
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="./documentos/Formato_Cuarto_CTA.doc">Descargar formato del Cuarto CTA</a>
+    <a class="dropdown-item" href="./documentos/Formato_Taller_Produccion.doc">Descargar formato del Taller de produci&oacute;n</a>
+    <a class="dropdown-item" href="./documentos/Formatos.doc">Descargar ambos formatos</a>
+  </div>
+</div>
+
 <div class="card w-100">
   <div class="card-body">
     <h5 class="card-title">Formatos cuarto CTA</h5>
