@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ver formatos CTA</title>
+	<title>Ver formatos CLA</title>
 <?php
 include("configHead.php");
 ?>

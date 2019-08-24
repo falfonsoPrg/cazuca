@@ -34,18 +34,18 @@ include("configHead.php");
   </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="./documentos/Formato_Cuarto_CTA.doc">Descargar formato del Cuarto CTA</a>
-    <a class="dropdown-item" href="./documentos/Formato_Taller_Produccion.doc">Descargar formato del Taller de produci&oacute;n</a>
-    <a class="dropdown-item" href="./documentos/Formatos.doc">Descargar ambos formatos</a>
+    <a class="dropdown-item" href="./documentos/Formato_Cuarto_CTA.docx">Descargar formato del Cuarto CLA</a>
+    <a class="dropdown-item" href="./documentos/Formato_Taller_Produccion.docx">Descargar formato del Taller de produci&oacute;n</a>
+    <a class="dropdown-item" href="./documentos/Formatos.docx">Descargar ambos formatos</a>
   </div>
 </div>
 
 <div class="card w-100">
   <div class="card-body">
-    <h5 class="card-title">Formatos cuarto CTA</h5>
+    <h5 class="card-title">Formatos cuarto CLA</h5>
 <div class="btn-group d-block">
-<a href="crearFormatoCTA.php" class="btn btn-outline-primary">Subir nuevo formato cuarto CTA</a>
-<a href="verFormatosCTA.php" class="btn btn-outline-primary">Ver todos los formatos CTA</a>
+<a href="crearFormatoCTA.php" class="btn btn-outline-primary">Subir nuevo formato cuarto CLA</a>
+<a href="verFormatosCTA.php" class="btn btn-outline-primary">Ver todos los formatos CLA</a>
 <a href="graficaMensualCTA.php" class="btn btn-outline-primary">Ver gr&aacute;ficas mensuales</a>
 <a href="graficaRangoCTA.php" class="btn btn-outline-primary">Ver gr&aacute;ficas en rango</a>
 </div>

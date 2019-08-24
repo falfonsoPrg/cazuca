@@ -72,21 +72,21 @@ include("configHead.php");
   <div class="card-body"><!-- CARD BODY -->
 <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" src="./img/documentacion.png" alt="Card image cap">
+    <img class="card-img-top" src="./img/documentacion.png" alt="Manual de lombricultura">
     <div class="card-body">
       <h5 class="card-title">Documentaci&oacute;n compostaje</h5>
       <p class="card-text">En este espacio encontrar&aacute;s toda la documentaci&oacute;n relacionada con el compostaje.</p>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="./img/documentacion.png" alt="Card image cap">
+    <a href="./documentos/Manual_de_manualidades.pdf"><img class="card-img-top" src="./img/documentacion.png" alt="Manual de manualidades"></a>
     <div class="card-body">
       <h5 class="card-title">Documentaci&oacute;n Manualidades</h5>
       <p class="card-text">En este espacio encontrar&aacute;s toda la documentaci&oacute;n de las manualidades.</p>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="./img/documentacion.png" alt="Card image cap">
+    <a href="./documentos/Manual_de_Usuario.pdf"><img class="card-img-top" src="./img/documentacion.png" alt="Manual de usuario"></a>
     <div class="card-body">
       <h5 class="card-title">Documentaci&oacute;n pagina</h5>
       <p class="card-text">En este espacio encontrar&aacute;s toda la documentaci&oacute;n de c&oacute;mo funciona la pagina.</p>

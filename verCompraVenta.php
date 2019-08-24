@@ -53,6 +53,7 @@ function reSend(){
        <tr>
         <th>Nombre del producto</th>
         <th>Cantidad</th>
+        <th>Valor unitario</th>
         <th>Descripci&oacute;n</th>
         <th>Fecha de la venta</th>
         <th>Valor total de la venta</th>
@@ -61,11 +62,12 @@ function reSend(){
     <tbody>
       <?php
       include('conexion.php');
-        $resultado =  mysqli_query($conn, 'SELECT nom_producto,cant_movimiento,desc_movimiento,fecha_movimiento,val_movimiento FROM movimiento,producto WHERE cod_operacion = 1 AND movimiento.cod_producto = producto.cod_producto ORDER BY cod_movimiento DESC');
+        $resultado =  mysqli_query($conn, 'SELECT nom_producto,cant_movimiento,val_producto,desc_movimiento,fecha_movimiento,val_movimiento FROM movimiento,producto WHERE cod_operacion = 1 AND movimiento.cod_producto = producto.cod_producto ORDER BY cod_movimiento DESC');
         while($row3 = mysqli_fetch_array($resultado)){ ?>
         <tr>
          <td> <?php  echo $row3['nom_producto']; ?></td>
          <td> <?php  echo $row3['cant_movimiento']; ?></td>
+         <td> <?php  echo $row3['val_producto']; ?></td>
          <td> <?php  echo $row3['desc_movimiento']; ?></td>
          <td> <?php  echo $row3['fecha_movimiento']; ?></td>
          <td> <?php  echo $row3['val_movimiento']; ?></td>
@@ -95,6 +97,7 @@ function reSend(){
        <tr>
         <th>Nombre del producto</th>
         <th>Cantidad</th>
+        <th>Valor unitario</th>
         <th>Descripci&oacute;n</th>
         <th>Fecha de la venta</th>
         <th>Valor total de la venta</th>
@@ -103,11 +106,12 @@ function reSend(){
     <tbody>
       <?php
       include('conexion.php');
-        $resultado =  mysqli_query($conn, 'SELECT nom_producto,cant_movimiento,desc_movimiento,fecha_movimiento,val_movimiento FROM movimiento,producto WHERE cod_operacion = 2 AND movimiento.cod_producto = producto.cod_producto ORDER BY cod_movimiento DESC');
+        $resultado =  mysqli_query($conn, 'SELECT nom_producto,cant_movimiento,val_producto,desc_movimiento,fecha_movimiento,val_movimiento FROM movimiento,producto WHERE cod_operacion = 2 AND movimiento.cod_producto = producto.cod_producto ORDER BY cod_movimiento DESC');
         while($row3 = mysqli_fetch_array($resultado)){ ?>
         <tr>
          <td> <?php  echo $row3['nom_producto']; ?></td>
          <td> <?php  echo $row3['cant_movimiento']; ?></td>
+         <td> <?php  echo $row3['val_producto']; ?></td>
          <td> <?php  echo $row3['desc_movimiento']; ?></td>
          <td> <?php  echo $row3['fecha_movimiento']; ?></td>
          <td> <?php  echo $row3['val_movimiento']; ?></td>

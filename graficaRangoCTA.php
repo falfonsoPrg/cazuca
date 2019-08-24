@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gr&aacute;fica en rango CTA</title>
+	<title>Gr&aacute;fica en rango CLA</title>
 <?php
 include("configHead.php");
 ?>
@@ -23,7 +23,7 @@ include("configHead.php");
 <!-- NAVEGADOR -->
 <!--           -->
 
-<h4 class="text-center">Gr&aacute;fica en rango del cuarto CTA</h4>
+<h4 class="text-center">Gr&aacute;fica en rango del cuarto CLA</h4>
 <div class="container">
   <div class="row">
       <div class="col-md"></div>

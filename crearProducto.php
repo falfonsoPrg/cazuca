@@ -25,12 +25,11 @@ function reSend(){
 if(isset($_POST['nom_producto'])){
 
 $nom_producto =  "'".$_POST['nom_producto']."'";
-$val_producto = $_POST['val_producto'];
 $img_producto = "'".$_FILES['imagen']['name']."'";
 
 $image = $_FILES['imagen']['name'];
 include_once('conexion.php');
-if (@mysqli_query($conn,"INSERT INTO producto VALUES('',$nom_producto,$val_producto,$img_producto)")) { 
+if (@mysqli_query($conn,"INSERT INTO producto VALUES('',$nom_producto,$img_producto)")) { 
 move_uploaded_file( $_FILES['imagen']['tmp_name'], "./productos/$image");?>
 <div class="alert alert-success" role="alert">
   Registro agregado con exito, espere unos segundos...

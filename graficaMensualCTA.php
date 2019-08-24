@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gr&aacute;fica mensual CTA</title>
+	<title>Gr&aacute;fica mensual CLA</title>
 <?php
 include("configHead.php");
 ?>
@@ -23,7 +23,7 @@ include("configHead.php");
 <!-- NAVEGADOR -->
 <!--           -->
 
-<h4 class="text-center">Gr&aacute;fica mensual del cuarto CTA</h4>
+<h4 class="text-center">Gr&aacute;fica mensual del cuarto CLA</h4>
 <div class="container">
   <div class="row">
       <div class="col-md"></div>

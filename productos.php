@@ -41,27 +41,29 @@ include("configHead.php");
   		<?php
   		include('conexion.php');
 		$resultado =  mysqli_query($conn, 'SELECT * FROM producto');
-		$resultado2 = mysqli_query($conn, 'SELECT PRODUCTO.cod_producto, COUNT(PRODUCTO.cod_producto) FROM MOVIMIENTO,PRODUCTO WHERE producto.cod_producto = movimiento.cod_producto AND cod_operacion=1 ORDER BY producto.cod_producto;');
-		$row2 = mysqli_fetch_array($resultado2);  
-		$resultado3 = mysqli_query($conn, 'SELECT PRODUCTO.cod_producto, COUNT(PRODUCTO.cod_producto) FROM MOVIMIENTO,PRODUCTO WHERE producto.cod_producto = movimiento.cod_producto AND cod_operacion=2 ORDER BY producto.cod_producto;');
-		$row3 = mysqli_fetch_array($resultado3); 
+		$resultado2 = mysqli_query($conn, 'SELECT PRODUCTO.cod_producto,SUM(MOVIMIENTO.cant_movimiento) FROM MOVIMIENTO,PRODUCTO WHERE producto.cod_producto = movimiento.cod_producto AND cod_operacion=1 GROUP BY PRODUCTO.cod_producto ORDER BY producto.cod_producto;');
+		$resultado3 = mysqli_query($conn, 'SELECT PRODUCTO.cod_producto,SUM(MOVIMIENTO.cant_movimiento) FROM MOVIMIENTO,PRODUCTO WHERE producto.cod_producto = movimiento.cod_producto AND cod_operacion=2 GROUP BY PRODUCTO.cod_producto ORDER BY producto.cod_producto;');
 		  while($row = mysqli_fetch_array($resultado)){?>
   			<tr>
   			<td><img class="img-fluid rounded" height="90" width="90" src="./productos/<?php echo $row[2];?>"></td>
   			<td class="text-center"><?php echo $row[1];?></td>
 			  <td class="text-center"><?php
-			  if($row2[0]==$row[0]){
-				echo $row2[1] . " vendidas, ";
-				$row2 = mysqli_fetch_array($resultado2);
-			  }else{
-				echo "0 vendidas ";
+			$text1 = "0 vendidas, ";
+			while($row2 = mysqli_fetch_array($resultado2)){
+			  	if($row2[0]==$row[0]){
+			  		$text1 = $row2[1] . " vendidas, ";
+			  	}
 			  }
-			  if($row3[0]==$row[0]){
-				echo $row3[1] . " compradas ";
-				$row2 = mysqli_fetch_array($resultado2);
-			  }else{
-				echo "0 compradas ";
+			echo $text1;
+		  	$resultado2 = mysqli_query($conn, 'SELECT PRODUCTO.cod_producto,SUM(MOVIMIENTO.cant_movimiento) FROM MOVIMIENTO,PRODUCTO WHERE producto.cod_producto = movimiento.cod_producto AND cod_operacion=1 GROUP BY PRODUCTO.cod_producto ORDER BY producto.cod_producto;');
+		  	$text2 = "0 compradas.";
+			while($row3 = mysqli_fetch_array($resultado3)){
+			  	if($row3[0]==$row[0]){
+			  		$text2 = $row3[1] . " compradas.";
+			  	}
 			  }
+			  echo $text2;
+		  	$resultado3 = mysqli_query($conn, 'SELECT PRODUCTO.cod_producto,SUM(MOVIMIENTO.cant_movimiento) FROM MOVIMIENTO,PRODUCTO WHERE producto.cod_producto = movimiento.cod_producto AND cod_operacion=2 GROUP BY PRODUCTO.cod_producto ORDER BY producto.cod_producto;');
 			  ?>
 			  </td>
   			</tr>

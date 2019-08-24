@@ -65,7 +65,7 @@ $val_producto = $_POST["val_producto"];
 $val_movimiento = $val_producto * $cant_movimiento;
 }
 
-if (@mysqli_query($conn,"INSERT INTO movimiento VALUES('',$cod_operacion,$cod_producto,$cant_movimiento,$val_movimiento,$desc_movimiento,$Fecha,$val_movimiento)")) { ?>
+if (@mysqli_query($conn,"INSERT INTO movimiento VALUES('',$cod_operacion,$cod_producto,$cant_movimiento,$val_producto,$desc_movimiento,$Fecha,$val_movimiento)")) { ?>
 <div class="alert alert-success" role="alert">
   Registro agregado con exito, espere unos segundos...
 </div>

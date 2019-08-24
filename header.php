@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background:rgba(255,255,255,0.5);">
 <a class="navbar-brand" href="index.php">
-   <img src="./img/logos/logo-proyecto.jpg" class="d-inline-block align-top" width="50px" height="50px"  alt="inicio">Cazuc&aacute;
+   <img src="./img/logos/logo-proyecto.jpg" class="d-inline-block align-top" width="50px" height="50px"  alt="inicio">Cazuca
 </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
