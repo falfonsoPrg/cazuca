@@ -46,7 +46,7 @@ $Fecha = $_POST['Fecha'];
 $fecha = DateTime::createFromFormat('m/d/Y', $Fecha);
 $Fecha  = $fecha->format('Y-m-d');
 $bool = true;
-$date = date('Y-m-d', strtotime("+0 day"));
+$date = date('Y-m-d', strtotime("-1 day"));
 if($date < $Fecha){
 $bool = false;
 }

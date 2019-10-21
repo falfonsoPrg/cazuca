@@ -33,7 +33,7 @@ function reSend(){
   <div class="row"> <!-- ROW -->
     <div class="col-md"> </div>
     <div class="col-md"> 
-<h3 class="text-center pb-3"> Registrar nueva movimiento</h3>
+<h3 class="text-center pb-3"> Registrar nuevo movimiento</h3>
 <?php
 if(isset($_POST['cod_operacion'])){
 date_default_timezone_set('UTC');

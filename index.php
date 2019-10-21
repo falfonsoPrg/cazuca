@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cazuc&aacute;</title>
+	<title>Cazuca</title>
 <?php
 include("configHead.php");
 ?>

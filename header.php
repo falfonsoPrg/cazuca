@@ -22,6 +22,9 @@
       <li class="nav-item pr-5">
         <a class="btn btn-outline-danger" href="productos.php">Productos</a>
       </li>
+      <li class="nav-item pr-5">
+        <a class="btn btn-outline-danger" href="lombricultivo.php">Lombricultivo</a>
+      </li>
     </ul>
   </div>
 </nav>

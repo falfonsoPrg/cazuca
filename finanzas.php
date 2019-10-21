@@ -120,7 +120,7 @@ new Chart(document.getElementById("line-chart1"), {
   options: {
     title: {
       display: true,
-      text: 'Gráfica de ventas'
+      text: 'Grafica de ventas'
     },
             scales: {
             yAxes: [{
@@ -152,7 +152,7 @@ new Chart(document.getElementById("line-chart"), {
   options: {
     title: {
       display: true,
-      text: 'Gráfica de compras'
+      text: 'Grafica de compras'
     },
             scales: {
             yAxes: [{
